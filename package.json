@@ -1,0 +1,21 @@
+{
+  "name": "ai-admin-assistant-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.12.2",
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter @apps/web --filter @apps/bff dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
